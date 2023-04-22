@@ -59,6 +59,7 @@ public class OrderApiController {
         return orderRepository.findAllWithMemberDelivery2(offset, limit).stream()
                 .map(OrderDto::new)
                 .collect(Collectors.toList());
+
     }
 
     @Data
